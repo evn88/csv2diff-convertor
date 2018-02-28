@@ -18,7 +18,7 @@ l: %CITY%
 title: %PROFESSION%
 `
 
-fs.createReadStream('jmes_ldif.csv')
+fs.createReadStream('in/jmes_ldif.csv')
   .pipe(csv({
       separator: ';'
   }))
